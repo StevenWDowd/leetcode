@@ -15,24 +15,7 @@ var minSteps = function(s, t) {
         }
     }
 
-    for (let char of t){
-        if (tMap.has(char)){
-            tMap.set(char, tMap.get(char) + 1);
-        } else {
-            tMap.set(char, 1);
-        }
-    }
     
-    // let overstock = 0;
-    // let missing = 0;
-    // for (let [char, freq] of sMap){
-    //     if (tMap.has(char)){
-    //         let tFreq = tMap.get(char);
-    //         overstock+= freq - tFreq;
-    //     } else {
-    //         missing+= freq;
-    //     }
-    // }
     for (let char of t){
         if (sMap.has(char)){
             if (sMap.get(char) > 0) sMap.set(char, sMap.get(char) - 1);
