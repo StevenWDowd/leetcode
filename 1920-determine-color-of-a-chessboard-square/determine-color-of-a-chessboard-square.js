@@ -4,7 +4,6 @@
  */
 var squareIsWhite = function(coordinates) {
     const blackOdd = new Set(['a', 'c', 'e', 'g']);
-    //const blackEven = new Map(['b', 'd', 'f', 'h']);
     let letter = coordinates[0];
     let num = Number(coordinates[1]);
     if (blackOdd.has(letter)){
