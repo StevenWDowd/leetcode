@@ -13,7 +13,7 @@
 var increasingBST = function(root) {
     if (!root) return root;
     let nodes = iOTraverse(root);
-    console.log('nodes is: ', nodes);
+    //console.log('nodes is: ', nodes);
     let newRoot = nodes[0];
     newRoot.left = null;
     newRoot.right = null;
