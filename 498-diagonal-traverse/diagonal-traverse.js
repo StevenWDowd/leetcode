@@ -9,7 +9,7 @@ var findDiagonalOrder = function(mat) {
     let col = 0;
     //let current = [row, col];
     while (final.length < mat.length * mat[0].length){
-        console.log(`current coords: [${row}, ${col}], and up is ${up}`);
+        //console.log(`current coords: [${row}, ${col}], and up is ${up}`);
         let current = mat[row][col];
         final.push(current);
         let coords = moveInMat(mat, up, row, col);
