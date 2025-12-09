@@ -16,18 +16,17 @@ var binaryTreePaths = function(root) {
     while (queue.length){
         let [curr, path] = queue.shift();
         if (!curr.left && !curr.right){
-            console.log('at leaf');
-            //array of vals to string
+            //console.log('at leaf');
             paths.push(path.join('->'));
         }
         if (curr.left){
-            console.log('adding left');
+            //console.log('adding left');
             let newPath = [...path];
             newPath.push(curr.left.val);
             queue.push([curr.left,newPath]);
         }
         if (curr.right){
-            console.log('adding right');
+            //console.log('adding right');
             let newPath = [...path];
             newPath.push(curr.right.val);
             queue.push([curr.right,newPath]);
