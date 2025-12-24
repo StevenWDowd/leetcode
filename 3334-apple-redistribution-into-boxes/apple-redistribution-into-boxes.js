@@ -14,19 +14,5 @@ var minimumBoxes = function(apple, capacity) {
         appleNo-= curr;
         boxes++;
     }
-    return boxes;
-    //let idx = 0;
-    // let currCap = capSort[idx];
-    // while (appleNo > 0){
-    //     appleNo--;
-    //     currCap--;
-    //     if (currCap === 0){
-    //         //need a new box
-    //         boxes++;
-    //         idx++;
-    //         currCap = capSort[idx];
-    //     }
-    // }
-    // return boxes;
-    
+    return boxes;  
 };
